@@ -16,9 +16,9 @@ module mojo_top (
   ) {
    
   sig rst;                  // reset signal
-   
-  clk_wiz_v3_6 clk_wiz (.CLK_IN1(clk));
-  hdmi_encoder hdmi (.clk(clk_wiz.CLK_OUT1), .rst(0));
+  
+  //clk_wiz_v3_6 clk_wiz (.CLK_IN1(clk));
+  hdmi_encoder hdmi (.clk(clk), #X_RES(640), #Y_RES(480), #X_FRAME(748), #Y_FRAME(561), #PCLK_DIV(2), .rst(0));
    
   .clk(hdmi.pclk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
