@@ -5,13 +5,16 @@
     <ucf lib="true">hdmi.ucf</ucf>
     <ucf lib="true">mojo.ucf</ucf>
     <component>dvi_encoder.luc</component>
+    <component>serdes_n_to_1.luc</component>
     <component>fifo_2x_reducer.luc</component>
     <component>tmds_encoder.luc</component>
-    <component>reset_conditioner.luc</component>
-    <component>async_fifo.luc</component>
-    <component>serdes_n_to_1.luc</component>
     <component>dvi_globals.luc</component>
     <component>hdmi_encoder.luc</component>
     <component>simple_dual_ram.v</component>
+    <component>reset_conditioner.luc</component>
+    <component>async_fifo.luc</component>
+    <core name="clk_wiz_v3_6">
+      <src>clk_wiz_v3_6.v</src>
+    </core>
   </files>
 </project>
